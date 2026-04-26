@@ -1,65 +1,85 @@
-import Image from "next/image";
+import { getProducts } from '@/lib/woocommerce';
+import ProductCard from '@/components/ProductCard';
+import ThemeToggle from '@/components/ThemeToggle';
 
-export default function Home() {
+export default async function Home() {
+  const products = await getProducts({ per_page: 8 });
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <div className="min-h-screen">
+      {/* Navigation */}
+      <nav className="fixed top-0 w-full z-50 p-6">
+        <div className="max-w-7xl mx-auto flex justify-between items-center glass px-8 py-4">
+          <div className="text-2xl font-black gradient-text">LP5 PREMIUM</div>
+          <div className="flex items-center gap-6">
+            <ThemeToggle />
+            <button className="btn-premium">Get Started</button>
+          </div>
+        </div>
+      </nav>
+
+      {/* Hero Section */}
+      <section className="pt-40 pb-20 px-6">
+        <div className="max-w-7xl mx-auto text-center">
+          <h1 className="text-6xl md:text-8xl font-black mb-8 leading-tight">
+            Elevate Your <br />
+            <span className="gradient-text">Experience</span>
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p className="text-[var(--text-muted)] text-xl max-w-2xl mx-auto mb-12">
+            Experience the future of e-commerce with our headless high-performance 
+            landing pages powered by Next.js and WooCommerce.
           </p>
+          <div className="flex gap-4 justify-center">
+            <button className="btn-premium px-12 py-4 text-lg">Shop Now</button>
+            <button className="px-12 py-4 rounded-full border border-[var(--glass-border)] hover:bg-[var(--bg-card)] transition-all">
+              Learn More
+            </button>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* Products Section */}
+      <section className="py-20 px-6 bg-white/[0.02]">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex justify-between items-end mb-12">
+            <div>
+              <h2 className="text-4xl font-bold mb-4">Featured Collection</h2>
+              <p className="text-[var(--text-muted)]">Handpicked products for your lifestyle.</p>
+            </div>
+            <button className="text-[var(--primary-color)] font-semibold hover:underline">
+              View All Products &rarr;
+            </button>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {products.length > 0 ? (
+              products.map((product: any) => (
+                <ProductCard key={product.id} product={product} />
+              ))
+            ) : (
+              // Empty State / Placeholder
+              Array.from({ length: 4 }).map((_, i) => (
+                <div key={i} className="glass aspect-[3/4] animate-pulse" />
+              ))
+            )}
+          </div>
         </div>
-      </main>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-20 px-6 border-t border-[var(--glass-border)] mt-20">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+          <div className="text-2xl font-black gradient-text">LP5 PREMIUM</div>
+          <div className="text-[var(--text-muted)]">
+            &copy; {new Date().getFullYear()} Boughalamallah Missoum. All rights reserved.
+          </div>
+          <div className="flex gap-8">
+            <a href="#" className="hover:text-[var(--primary-color)] transition-colors">Privacy</a>
+            <a href="#" className="hover:text-[var(--primary-color)] transition-colors">Terms</a>
+            <a href="#" className="hover:text-[var(--primary-color)] transition-colors">Contact</a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
