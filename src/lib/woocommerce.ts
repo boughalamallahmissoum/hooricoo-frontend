@@ -34,3 +34,32 @@ export async function getProductBySlug(slug: string) {
   const products = await getProducts({ slug });
   return products[0] || null;
 }
+
+export async function createOrder(orderData: any) {
+  const url = new URL(`${baseUrl}/wp-json/wc/v3/orders`);
+  
+  // Add auth params
+  url.searchParams.append('consumer_key', ck!);
+  url.searchParams.append('consumer_secret', cs!);
+
+  try {
+    const response = await fetch(url.toString(), {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(orderData),
+    });
+
+    if (!response.ok) {
+      const errorData = await response.json().catch(() => null);
+      console.error('Failed to create order. Response:', errorData);
+      throw new Error(`Failed to create order: ${response.statusText}`);
+    }
+
+    return await response.json();
+  } catch (error) {
+    console.error('WooCommerce API Error (createOrder):', error);
+    throw error;
+  }
+}
