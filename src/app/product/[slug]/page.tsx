@@ -21,9 +21,9 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
   return (
     <main className="min-h-screen relative overflow-hidden py-12 px-4 sm:px-6 lg:px-8">
       {/* Background Abstract Gradients */}
-      <div className="absolute inset-0 w-full h-full pointer-events-none">
-        <div className="absolute top-0 left-1/4 w-[40rem] h-[40rem] bg-emerald-600/10 rounded-full blur-[120px] mix-blend-screen" />
-        <div className="absolute bottom-0 right-1/4 w-[30rem] h-[30rem] bg-cyan-600/10 rounded-full blur-[120px] mix-blend-screen" />
+      <div className="absolute inset-0 w-full h-full pointer-events-none overflow-hidden">
+        <div className="absolute top-[-10%] left-[-10%] w-[40rem] h-[40rem] bg-emerald-500/20 rounded-full blur-[100px] mix-blend-normal" />
+        <div className="absolute bottom-[-10%] right-[-10%] w-[30rem] h-[30rem] bg-cyan-500/20 rounded-full blur-[100px] mix-blend-normal" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto">

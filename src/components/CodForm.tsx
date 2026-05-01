@@ -3,6 +3,7 @@
 import { useActionState, useEffect, useState } from 'react';
 import { submitCodOrder } from '@/app/actions';
 import { useFormStatus } from 'react-dom';
+import { algeriaCities } from '@/lib/algeriaCities';
 
 function SubmitButton() {
   const { pending } = useFormStatus();
@@ -39,6 +40,18 @@ export default function CodForm({ productId, productPrice, attributes }: CodForm
 
   const [selectedColor, setSelectedColor] = useState<string>(colors[0] || '');
   const [selectedSize, setSelectedSize] = useState<string>(sizes[0] || '');
+
+  const [selectedWilaya, setSelectedWilaya] = useState<string>('');
+  const [availableCommunes, setAvailableCommunes] = useState<string[]>([]);
+  const [selectedCommune, setSelectedCommune] = useState<string>('');
+
+  const handleWilayaChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const wilayaName = e.target.value;
+    setSelectedWilaya(wilayaName);
+    const wilaya = algeriaCities.find((w) => w.name === wilayaName);
+    setAvailableCommunes(wilaya?.baladiyas || []);
+    setSelectedCommune(''); // reset commune when wilaya changes
+  };
 
   return (
     <div className="glass w-full p-6 sm:p-8 rounded-3xl shadow-[0_8px_32px_rgba(0,0,0,0.3)] relative overflow-hidden">
@@ -79,23 +92,49 @@ export default function CodForm({ productId, productPrice, attributes }: CodForm
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="space-y-1">
             <label className="text-sm font-medium text-[var(--color-text-muted)]">Wilaya</label>
-            <input
-              type="text"
-              name="wilaya"
-              required
-              placeholder="E.g. Algiers"
-              className="w-full px-4 py-3 bg-[var(--color-bg-dark)] border border-[var(--color-glass-border)] rounded-xl focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 text-[var(--color-text-main)] placeholder:text-[var(--color-text-muted)] transition-all"
-            />
+            <div className="relative">
+              <select
+                name="wilaya"
+                required
+                value={selectedWilaya}
+                onChange={handleWilayaChange}
+                className="w-full px-4 py-3 bg-[var(--color-bg-dark)] border border-[var(--color-glass-border)] rounded-xl focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 text-[var(--color-text-main)] appearance-none transition-all"
+              >
+                <option value="" disabled>Select Wilaya</option>
+                {algeriaCities.map((wilaya) => (
+                  <option key={wilaya.id} value={wilaya.name} className="bg-[var(--color-bg-dark)] text-[var(--color-text-main)]">
+                    {wilaya.id} - {wilaya.name}
+                  </option>
+                ))}
+              </select>
+              {/* Custom Dropdown Arrow */}
+              <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-[var(--color-text-muted)]">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+              </div>
+            </div>
           </div>
           <div className="space-y-1">
             <label className="text-sm font-medium text-[var(--color-text-muted)]">Commune</label>
-            <input
-              type="text"
-              name="commune"
-              required
-              placeholder="E.g. Bab Ezzouar"
-              className="w-full px-4 py-3 bg-[var(--color-bg-dark)] border border-[var(--color-glass-border)] rounded-xl focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 text-[var(--color-text-main)] placeholder:text-[var(--color-text-muted)] transition-all"
-            />
+            <div className="relative">
+              <select
+                name="commune"
+                required
+                value={selectedCommune}
+                onChange={(e) => setSelectedCommune(e.target.value)}
+                disabled={!selectedWilaya}
+                className="w-full px-4 py-3 bg-[var(--color-bg-dark)] border border-[var(--color-glass-border)] rounded-xl focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 text-[var(--color-text-main)] appearance-none transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                <option value="" disabled>Select Commune</option>
+                {availableCommunes.map((commune) => (
+                  <option key={commune} value={commune} className="bg-[var(--color-bg-dark)] text-[var(--color-text-main)]">
+                    {commune}
+                  </option>
+                ))}
+              </select>
+              <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-[var(--color-text-muted)]">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+              </div>
+            </div>
           </div>
         </div>
 

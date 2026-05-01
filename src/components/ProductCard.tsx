@@ -40,11 +40,11 @@ export default function ProductCard({ product }: { product: Product }) {
         <h3 className="text-xl font-bold mb-1 line-clamp-1">{product.name}</h3>
         <div className="flex justify-between items-center">
           <span className="text-[var(--primary-color)] font-bold text-2xl">{product.price} DZD</span>
-          <button className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors">
+          <div className="bg-[var(--color-bg-card)] hover:bg-[var(--color-glass-border)] p-2 rounded-full transition-colors">
             <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4" />
             </svg>
-          </button>
+          </div>
         </div>
       </motion.div>
     </Link>

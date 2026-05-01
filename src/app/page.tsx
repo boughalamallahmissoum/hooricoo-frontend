@@ -39,7 +39,7 @@ export default async function Home() {
       </section>
 
       {/* Products Section */}
-      <section className="py-20 px-6 bg-white/[0.02]">
+      <section className="py-20 px-6 bg-[var(--color-bg-card)]">
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-between items-end mb-12">
             <div>
@@ -59,7 +59,7 @@ export default async function Home() {
             ) : (
               // Empty State / Placeholder
               Array.from({ length: 4 }).map((_, i) => (
-                <div key={i} className="glass aspect-[3/4] animate-pulse" />
+                <div key={i} className="glass aspect-square rounded-xl animate-pulse" />
               ))
             )}
           </div>
