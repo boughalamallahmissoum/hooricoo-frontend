@@ -19,7 +19,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
   })) || [];
 
   return (
-    <main className="min-h-screen bg-neutral-950 text-white relative overflow-hidden py-12 px-4 sm:px-6 lg:px-8">
+    <main className="min-h-screen relative overflow-hidden py-12 px-4 sm:px-6 lg:px-8">
       {/* Background Abstract Gradients */}
       <div className="absolute inset-0 w-full h-full pointer-events-none">
         <div className="absolute top-0 left-1/4 w-[40rem] h-[40rem] bg-emerald-600/10 rounded-full blur-[120px] mix-blend-screen" />
@@ -33,19 +33,19 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
           <div className="space-y-8">
             <ProductCarousel images={images} />
             
-            <div className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl p-6 shadow-lg">
+            <div className="glass p-6 shadow-lg">
               <h1 className="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400 mb-4">
                 {product.name}
               </h1>
               
               <div 
-                className="prose prose-invert prose-emerald max-w-none text-gray-300"
+                className="prose prose-emerald max-w-none text-[var(--color-text-muted)]"
                 dangerouslySetInnerHTML={{ __html: product.description || product.short_description }}
               />
               
               <div className="mt-6 flex flex-wrap gap-2">
                 {product.categories?.map((category: any) => (
-                  <span key={category.id} className="px-3 py-1 text-sm rounded-full bg-white/10 border border-white/20 text-gray-300">
+                  <span key={category.id} className="px-3 py-1 text-sm rounded-full bg-[var(--color-bg-card)] border border-[var(--color-glass-border)] text-[var(--color-text-main)]">
                     {category.name}
                   </span>
                 ))}

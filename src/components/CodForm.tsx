@@ -37,8 +37,11 @@ export default function CodForm({ productId, productPrice, attributes }: CodForm
   const colors = attributes.find((attr) => attr.name.toLowerCase() === 'color')?.options || [];
   const sizes = attributes.find((attr) => attr.name.toLowerCase() === 'size')?.options || [];
 
+  const [selectedColor, setSelectedColor] = useState<string>(colors[0] || '');
+  const [selectedSize, setSelectedSize] = useState<string>(sizes[0] || '');
+
   return (
-    <div className="w-full p-6 sm:p-8 rounded-3xl backdrop-blur-2xl bg-white/5 border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.3)] relative overflow-hidden">
+    <div className="glass w-full p-6 sm:p-8 rounded-3xl shadow-[0_8px_32px_rgba(0,0,0,0.3)] relative overflow-hidden">
       {/* Decorative Glow */}
       <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500/10 rounded-full blur-[80px] pointer-events-none" />
 
@@ -48,110 +51,121 @@ export default function CodForm({ productId, productPrice, attributes }: CodForm
 
       <form action={formAction} className="space-y-4 relative z-10">
         <input type="hidden" name="productId" value={productId} />
+        {colors.length > 0 && <input type="hidden" name="color" value={selectedColor} />}
+        {sizes.length > 0 && <input type="hidden" name="size" value={selectedSize} />}
 
         <div className="space-y-1">
-          <label className="text-sm font-medium text-gray-300">Full Name</label>
+          <label className="text-sm font-medium text-[var(--color-text-muted)]">Full Name</label>
           <input
             type="text"
             name="name"
             required
             placeholder="Enter your full name"
-            className="w-full px-4 py-3 bg-black/20 border border-white/10 rounded-xl focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 text-white placeholder-gray-500 transition-all"
+            className="w-full px-4 py-3 bg-[var(--color-bg-dark)] border border-[var(--color-glass-border)] rounded-xl focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 text-[var(--color-text-main)] placeholder:text-[var(--color-text-muted)] transition-all"
           />
         </div>
 
         <div className="space-y-1">
-          <label className="text-sm font-medium text-gray-300">Phone Number</label>
+          <label className="text-sm font-medium text-[var(--color-text-muted)]">Phone Number</label>
           <input
             type="tel"
             name="phone"
             required
             placeholder="05xxxxxx / 07xxxxxx / 06xxxxxx"
-            className="w-full px-4 py-3 bg-black/20 border border-white/10 rounded-xl focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 text-white placeholder-gray-500 transition-all"
+            className="w-full px-4 py-3 bg-[var(--color-bg-dark)] border border-[var(--color-glass-border)] rounded-xl focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 text-[var(--color-text-main)] placeholder:text-[var(--color-text-muted)] transition-all"
           />
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="space-y-1">
-            <label className="text-sm font-medium text-gray-300">Wilaya</label>
+            <label className="text-sm font-medium text-[var(--color-text-muted)]">Wilaya</label>
             <input
               type="text"
               name="wilaya"
               required
               placeholder="E.g. Algiers"
-              className="w-full px-4 py-3 bg-black/20 border border-white/10 rounded-xl focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 text-white placeholder-gray-500 transition-all"
+              className="w-full px-4 py-3 bg-[var(--color-bg-dark)] border border-[var(--color-glass-border)] rounded-xl focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 text-[var(--color-text-main)] placeholder:text-[var(--color-text-muted)] transition-all"
             />
           </div>
           <div className="space-y-1">
-            <label className="text-sm font-medium text-gray-300">Commune</label>
+            <label className="text-sm font-medium text-[var(--color-text-muted)]">Commune</label>
             <input
               type="text"
               name="commune"
               required
               placeholder="E.g. Bab Ezzouar"
-              className="w-full px-4 py-3 bg-black/20 border border-white/10 rounded-xl focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 text-white placeholder-gray-500 transition-all"
+              className="w-full px-4 py-3 bg-[var(--color-bg-dark)] border border-[var(--color-glass-border)] rounded-xl focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 text-[var(--color-text-main)] placeholder:text-[var(--color-text-muted)] transition-all"
             />
           </div>
         </div>
 
         {(colors.length > 0 || sizes.length > 0) && (
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+          <div className="space-y-4 pt-2">
             {colors.length > 0 && (
-              <div className="space-y-1">
-                <label className="text-sm font-medium text-gray-300">Color</label>
-                <select
-                  name="color"
-                  required
-                  className="w-full px-4 py-3 bg-black/20 border border-white/10 rounded-xl focus:outline-none focus:border-emerald-500 text-white appearance-none"
-                >
-                  <option value="" disabled selected>Select Color</option>
+              <div className="space-y-2">
+                <label className="text-sm font-medium text-[var(--color-text-muted)]">Color</label>
+                <div className="flex flex-wrap gap-2">
                   {colors.map((color) => (
-                    <option key={color} value={color} className="bg-neutral-900 text-white">
+                    <button
+                      key={color}
+                      type="button"
+                      onClick={() => setSelectedColor(color)}
+                      className={`px-4 py-2 rounded-xl border text-sm font-medium transition-all ${
+                        selectedColor === color
+                          ? 'border-emerald-500 bg-emerald-500/10 text-[var(--color-text-main)]'
+                          : 'border-[var(--color-glass-border)] bg-[var(--color-bg-dark)] text-[var(--color-text-muted)] hover:border-emerald-500/50'
+                      }`}
+                    >
                       {color}
-                    </option>
+                    </button>
                   ))}
-                </select>
+                </div>
               </div>
             )}
+            
             {sizes.length > 0 && (
-              <div className="space-y-1">
-                <label className="text-sm font-medium text-gray-300">Size</label>
-                <select
-                  name="size"
-                  required
-                  className="w-full px-4 py-3 bg-black/20 border border-white/10 rounded-xl focus:outline-none focus:border-emerald-500 text-white appearance-none"
-                >
-                  <option value="" disabled selected>Select Size</option>
+              <div className="space-y-2">
+                <label className="text-sm font-medium text-[var(--color-text-muted)]">Size</label>
+                <div className="flex flex-wrap gap-2">
                   {sizes.map((size) => (
-                    <option key={size} value={size} className="bg-neutral-900 text-white">
+                    <button
+                      key={size}
+                      type="button"
+                      onClick={() => setSelectedSize(size)}
+                      className={`px-4 py-2 rounded-xl border text-sm font-medium transition-all ${
+                        selectedSize === size
+                          ? 'border-cyan-500 bg-cyan-500/10 text-[var(--color-text-main)]'
+                          : 'border-[var(--color-glass-border)] bg-[var(--color-bg-dark)] text-[var(--color-text-muted)] hover:border-cyan-500/50'
+                      }`}
+                    >
                       {size}
-                    </option>
+                    </button>
                   ))}
-                </select>
+                </div>
               </div>
             )}
           </div>
         )}
 
         {/* Pricing Summary */}
-        <div className="mt-6 p-4 rounded-xl bg-black/30 border border-white/5 space-y-3">
-          <div className="flex justify-between text-sm text-gray-400">
+        <div className="mt-6 p-4 rounded-xl bg-[var(--color-bg-dark)] border border-[var(--color-glass-border)] space-y-3">
+          <div className="flex justify-between text-sm text-[var(--color-text-muted)]">
             <span>Product Price</span>
             <span>{productPrice} DZD</span>
           </div>
-          <div className="flex justify-between text-sm text-gray-400">
+          <div className="flex justify-between text-sm text-[var(--color-text-muted)]">
             <span>Shipping Cost</span>
             <span>{shippingCost} DZD</span>
           </div>
-          <div className="w-full h-px bg-white/10 my-2" />
-          <div className="flex justify-between text-lg font-bold text-white">
+          <div className="w-full h-px bg-[var(--color-glass-border)] my-2" />
+          <div className="flex justify-between text-lg font-bold text-[var(--color-text-main)]">
             <span>Total to Pay</span>
-            <span className="text-emerald-400">{totalPrice} DZD</span>
+            <span className="text-emerald-500">{totalPrice} DZD</span>
           </div>
         </div>
 
         {state?.error && (
-          <div className="p-3 mt-4 text-sm text-red-400 bg-red-400/10 border border-red-400/20 rounded-xl">
+          <div className="p-3 mt-4 text-sm text-red-500 bg-red-500/10 border border-red-500/20 rounded-xl">
             {state.error}
           </div>
         )}
