@@ -3,7 +3,7 @@
 import { createOrder } from '@/lib/woocommerce';
 import { redirect } from 'next/navigation';
 
-export async function submitCodOrder(formData: FormData) {
+export async function submitCodOrder(prevState: any, formData: FormData) {
   // Extract fields from FormData
   const productId = formData.get('productId');
   const name = formData.get('name') as string;
