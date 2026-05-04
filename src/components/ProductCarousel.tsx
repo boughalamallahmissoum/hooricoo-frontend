@@ -1,8 +1,9 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
+import { useProductSelection } from './ProductSelectionContext';
 
 interface ProductImage {
   id: number;
@@ -10,8 +11,27 @@ interface ProductImage {
   alt: string;
 }
 
-export default function ProductCarousel({ images }: { images: ProductImage[] }) {
+export default function ProductCarousel({ 
+  images, 
+  variationImages = {} 
+}: { 
+  images: ProductImage[];
+  variationImages?: Record<string, string>;
+}) {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const { selectedColor } = useProductSelection();
+
+  // Watch for selectedColor changes and update the carousel if we have a matching image
+  useEffect(() => {
+    if (selectedColor && variationImages[selectedColor]) {
+      const targetSrc = variationImages[selectedColor];
+      const targetIndex = images.findIndex(img => img.src === targetSrc);
+      
+      if (targetIndex !== -1) {
+        setCurrentIndex(targetIndex);
+      }
+    }
+  }, [selectedColor, variationImages, images]);
 
   if (!images || images.length === 0) {
     return (

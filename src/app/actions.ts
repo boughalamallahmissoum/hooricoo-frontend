@@ -10,15 +10,34 @@ export async function submitCodOrder(prevState: any, formData: FormData) {
   const phone = formData.get('phone') as string;
   const wilaya = formData.get('wilaya') as string;
   const commune = formData.get('commune') as string;
-  const color = formData.get('color') as string;
-  const size = formData.get('size') as string;
+  const quantity = parseInt(formData.get('quantity') as string || '1', 10);
+  const bundlePriceStr = formData.get('bundlePrice') as string;
+  const itemSelectionsStr = formData.get('itemSelections') as string;
+  const shippingMethod = formData.get('shippingMethod') as string;
+  const shippingCost = formData.get('shippingCost') as string || '600';
 
   if (!productId || !name || !phone || !wilaya || !commune) {
     return { error: 'Please fill in all required fields.' };
   }
 
+  // Parse multi-item variations
+  let parsedSelections: any[] = [];
+  try {
+    if (itemSelectionsStr) parsedSelections = JSON.parse(itemSelectionsStr);
+  } catch (e) {}
+
+  let customerNote = '';
+  if (parsedSelections.length > 0) {
+    customerNote = parsedSelections
+      .map((sel, i) => `القطعة ${i + 1} - اللون: ${sel.color || 'غير محدد'} | المقاس: ${sel.size || 'غير محدد'}`)
+      .join('\n');
+  }
+  
+  // Append shipping info to note
+  customerNote += `\n\nطريقة التوصيل: ${shippingMethod === 'home' ? 'للمنزل' : 'للمكتب (Stopdesk)'}`;
+
   // Construct WooCommerce Order Payload
-  const orderData = {
+  const orderData: any = {
     payment_method: 'cod',
     payment_method_title: 'Cash on Delivery',
     set_paid: false,
@@ -42,19 +61,25 @@ export async function submitCodOrder(prevState: any, formData: FormData) {
     line_items: [
       {
         product_id: parseInt(productId as string, 10),
-        quantity: 1,
+        quantity: quantity,
       },
     ],
-    // Flat rate shipping of 600 DZD
+    // Dynamic shipping rate
     shipping_lines: [
       {
         method_id: 'flat_rate',
-        method_title: 'Delivery to ' + wilaya,
-        total: '600',
+        method_title: (shippingMethod === 'home' ? 'توصيل للمنزل' : 'توصيل للمكتب') + ' - ' + wilaya,
+        total: shippingCost,
       },
     ],
-    customer_note: `Color: ${color || 'N/A'}, Size: ${size || 'N/A'}`,
+    customer_note: customerNote,
   };
+
+  // If a specific bundle price was sent, override the line item total
+  if (bundlePriceStr) {
+    orderData.line_items[0].subtotal = bundlePriceStr;
+    orderData.line_items[0].total = bundlePriceStr;
+  }
 
   let createdOrder;
   try {
@@ -66,6 +91,6 @@ export async function submitCodOrder(prevState: any, formData: FormData) {
     return { error: err.message || 'An unexpected error occurred.' };
   }
 
-  // Redirect to Thank You page with order ID
-  redirect(`/thank-you?order=${createdOrder.id}`);
+  // Redirect to Thank You page with order ID and secure key
+  redirect(`/thank-you?order=${createdOrder.id}&key=${createdOrder.order_key}`);
 }
