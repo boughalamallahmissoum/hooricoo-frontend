@@ -46,8 +46,8 @@ export default function ProductCarousel({
 
   if (!images || images.length === 0) {
     return (
-      <div className="w-full h-96 bg-white/5 rounded-[2rem] flex items-center justify-center border border-white/10 backdrop-blur-md">
-        <span className="text-slate-500 font-bold uppercase tracking-widest text-xs">لا توجد صور متاحة</span>
+      <div className="w-full h-96 bg-card rounded-[2rem] flex items-center justify-center border border-glass-border backdrop-blur-md">
+        <span className="text-muted font-bold uppercase tracking-widest text-xs">لا توجد صور متاحة</span>
       </div>
     );
   }
@@ -56,7 +56,7 @@ export default function ProductCarousel({
     <div className="w-full flex flex-col gap-6">
       {/* Main Image Viewer */}
       <div 
-        className="relative w-full aspect-square rounded-[2.5rem] overflow-hidden bg-[#0a0f1e] border border-white/5 shadow-2xl group cursor-zoom-in"
+        className="relative w-full aspect-square rounded-[2.5rem] overflow-hidden bg-card border border-glass-border shadow-2xl group cursor-zoom-in"
         onMouseMove={handleMouseMove}
         onMouseEnter={() => setIsHovering(true)}
         onMouseLeave={() => setIsHovering(false)}
@@ -91,14 +91,14 @@ export default function ProductCarousel({
         />
 
         {/* Decorative Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/10 dark:from-black/40 via-transparent to-transparent pointer-events-none" />
 
         {/* Navigation Arrows - Premium Style */}
         {images.length > 1 && (
           <>
             <button
               onClick={(e) => { e.stopPropagation(); setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1)); }}
-              className="absolute left-6 top-1/2 -translate-y-1/2 w-12 h-12 rounded-2xl bg-black/40 backdrop-blur-xl text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-emerald-500 hover:scale-110 border border-white/10 z-20"
+              className="absolute left-6 top-1/2 -translate-y-1/2 w-12 h-12 rounded-2xl bg-card/40 backdrop-blur-xl text-main flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-emerald-500 hover:text-black hover:scale-110 border border-glass-border z-20"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
@@ -106,7 +106,7 @@ export default function ProductCarousel({
             </button>
             <button
               onClick={(e) => { e.stopPropagation(); setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1)); }}
-              className="absolute right-6 top-1/2 -translate-y-1/2 w-12 h-12 rounded-2xl bg-black/40 backdrop-blur-xl text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-emerald-500 hover:scale-110 border border-white/10 z-20"
+              className="absolute right-6 top-1/2 -translate-y-1/2 w-12 h-12 rounded-2xl bg-card/40 backdrop-blur-xl text-main flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-emerald-500 hover:text-black hover:scale-110 border border-glass-border z-20"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
@@ -120,8 +120,8 @@ export default function ProductCarousel({
           <div className="px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 backdrop-blur-md">
             <span className="text-[10px] font-black uppercase tracking-widest text-emerald-400">High Resolution</span>
           </div>
-          <div className="px-3 py-1 rounded-full bg-white/5 border border-white/10 backdrop-blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-            <span className="text-[10px] font-black uppercase tracking-widest text-white/40 flex items-center gap-2">
+          <div className="px-3 py-1 rounded-full bg-card/50 border border-glass-border backdrop-blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            <span className="text-[10px] font-black uppercase tracking-widest text-muted/60 flex items-center gap-2">
               <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
               Tap to Zoom
             </span>
@@ -139,7 +139,7 @@ export default function ProductCarousel({
               className={`relative w-20 h-20 sm:w-24 sm:h-24 flex-shrink-0 rounded-2xl overflow-hidden border-2 transition-all duration-500 snap-start ${
                 idx === currentIndex 
                   ? 'border-emerald-500 shadow-[0_0_20px_rgba(16,185,129,0.3)] scale-105 z-10' 
-                  : 'border-white/5 opacity-40 hover:opacity-100 hover:border-white/20'
+                  : 'border-glass-border opacity-40 hover:opacity-100 hover:border-emerald-500/30'
               }`}
             >
               <Image

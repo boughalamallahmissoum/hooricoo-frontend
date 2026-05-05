@@ -49,7 +49,7 @@ const TrustNotification = () => {
             initial={{ opacity: 0, x: -100, filter: 'blur(10px)' }}
             animate={{ opacity: 1, x: 0, filter: 'blur(0px)' }}
             exit={{ opacity: 0, x: -100, filter: 'blur(10px)' }}
-            className="glass-premium p-4 rounded-2xl flex items-center gap-4 shadow-2xl border-white/10 max-w-[280px]"
+            className="glass-premium p-4 rounded-2xl flex items-center gap-4 shadow-2xl border-glass-border max-w-[280px]"
           >
             <div className="w-10 h-10 rounded-xl bg-emerald-500/20 flex items-center justify-center text-emerald-400 border border-emerald-500/30 flex-shrink-0">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -58,10 +58,10 @@ const TrustNotification = () => {
             </div>
             <div className="flex-1 overflow-hidden">
               <p className="text-[10px] font-black text-emerald-500 uppercase tracking-[0.2em] mb-0.5">طلب جديد</p>
-              <p className="text-xs text-white font-bold truncate">
+              <p className="text-xs text-main font-bold truncate">
                 {notification.name} من {notification.city}
               </p>
-              <p className="text-[10px] text-slate-500 font-medium">اشترى هذا المنتج منذ {notification.time}</p>
+              <p className="text-[10px] text-muted font-medium">اشترى هذا المنتج منذ {notification.time}</p>
             </div>
             <div className="absolute -top-1 -right-1 flex">
                <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-emerald-400 opacity-75"></span>

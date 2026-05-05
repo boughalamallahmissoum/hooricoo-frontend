@@ -7,20 +7,20 @@
   --color-primary: #10b981; /* Emerald 500 */
   --color-primary-hover: #059669; /* Emerald 600 */
   --color-accent: #fbbf24; /* Amber/Gold 400 */
+  --color-bg-dark: #f8fafc; /* Light default background */
+  --color-bg-card: rgba(0, 0, 0, 0.03);
+  --color-text-main: #020617;
+  --color-text-muted: #64748b;
+  --color-glass-border: rgba(0, 0, 0, 0.08);
+  --glass-blur: blur(20px);
+}
+
+[data-theme="dark"] {
   --color-bg-dark: #020617; /* Slate 950 */
   --color-bg-card: rgba(255, 255, 255, 0.03);
   --color-text-main: #f8fafc;
   --color-text-muted: #94a3b8;
   --color-glass-border: rgba(255, 255, 255, 0.08);
-  --glass-blur: blur(20px);
-}
-
-[data-theme="light"] {
-  --color-bg-dark: #f8fafc;
-  --color-bg-card: rgba(0, 0, 0, 0.03);
-  --color-text-main: #020617;
-  --color-text-muted: #64748b;
-  --color-glass-border: rgba(0, 0, 0, 0.08);
 }
 
 @layer base {
@@ -36,27 +36,23 @@
 
 @layer components {
   .glass {
-    background: linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.05) 0%,
-      rgba(255, 255, 255, 0.02) 100%
-    );
+    background: color-mix(in srgb, var(--color-bg-dark), transparent 95%);
     backdrop-filter: var(--glass-blur);
     -webkit-backdrop-filter: var(--glass-blur);
     border: 1px solid var(--color-glass-border);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
   }
 
   .glass-premium {
     background: linear-gradient(
       135deg,
       rgba(16, 185, 129, 0.05) 0%,
-      rgba(16, 185, 129, 0.01) 100%
+      rgba(16, 185, 129, 0.02) 100%
     );
     backdrop-filter: var(--glass-blur);
     -webkit-backdrop-filter: var(--glass-blur);
     border: 1px solid rgba(16, 185, 129, 0.15);
-    box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.1);
   }
   
   .gradient-text {

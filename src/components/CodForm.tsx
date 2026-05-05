@@ -182,7 +182,7 @@ export default function CodForm({ productId, productPrice, attributes }: CodForm
   return (
     <div id="order-form" className="glass-premium w-full p-6 sm:p-10 rounded-[3rem] shadow-[0_40px_100px_-20px_rgba(0,0,0,0.6)] relative overflow-hidden border-emerald-500/10">
       {/* Scarcity Marquee - Improved Integration */}
-      <div className="absolute top-0 left-0 right-0 h-12 bg-black/40 backdrop-blur-md flex items-center overflow-hidden border-b border-white/5">
+      <div className="absolute top-0 left-0 right-0 h-12 bg-emerald-500/5 backdrop-blur-md flex items-center overflow-hidden border-b border-glass-border">
         <motion.div 
           animate={{ x: ["-50%", "0%"] }}
           transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
@@ -194,15 +194,15 @@ export default function CodForm({ productId, productPrice, attributes }: CodForm
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
                 متبقي 7 قطع فقط
               </span>
-              <div className="w-1 h-1 rounded-full bg-white/10" />
+              <div className="w-1 h-1 rounded-full bg-glass-border" />
               <span className="flex items-center gap-2 text-[9px] font-black text-amber-500 uppercase tracking-[0.25em]">
                 طلب مؤكد منذ 2 دقيقة
               </span>
-              <div className="w-1 h-1 rounded-full bg-white/10" />
+              <div className="w-1 h-1 rounded-full bg-glass-border" />
               <span className="flex items-center gap-2 text-[9px] font-black text-cyan-400 uppercase tracking-[0.25em]">
                 توصيل سريع مجاني
               </span>
-              <div className="w-1 h-1 rounded-full bg-white/10" />
+              <div className="w-1 h-1 rounded-full bg-glass-border" />
             </div>
           ))}
         </motion.div>
@@ -211,7 +211,7 @@ export default function CodForm({ productId, productPrice, attributes }: CodForm
       <div className="relative z-10 pt-10">
         <div className="flex items-start justify-between mb-10">
           <div>
-            <h2 className="text-4xl font-black text-white tracking-tighter mb-2">تأكيد الطلب</h2>
+            <h2 className="text-4xl font-black text-main tracking-tighter mb-2">تأكيد الطلب</h2>
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
               <p className="text-sm text-emerald-400/80 font-bold uppercase tracking-widest">الدفع عند الاستلام</p>
@@ -232,22 +232,22 @@ export default function CodForm({ productId, productPrice, attributes }: CodForm
 
           {/* Bundle Selector - Enhanced */}
           <div className="space-y-4">
-            <label className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-500 px-1">اختر باقة التوفير</label>
+            <label className="text-[10px] font-black uppercase tracking-[0.2em] text-muted px-1">اختر باقة التوفير</label>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {bundleOffers.map((offer) => (
                 <button
                   key={offer.quantity}
                   type="button"
                   onClick={() => setSelectedQuantity(offer.quantity)}
-                  className={`relative p-5 rounded-[2rem] border-2 text-right transition-all duration-500 group overflow-hidden ${
+                  className={`relative p-5 rounded-3xl border-2 ${
                     selectedQuantity === offer.quantity
                       ? 'border-emerald-500 bg-emerald-500/10 shadow-[0_15px_30px_-10px_rgba(16,185,129,0.2)]'
-                      : 'border-white/5 bg-white/[0.02] hover:border-white/10 hover:bg-white/[0.04]'
-                  }`}
+                      : 'border-glass-border bg-card hover:bg-emerald-500/5'
+                  } text-right transition-all duration-500 group overflow-hidden`}
                 >
                   <div className="flex justify-between items-start mb-3">
                     <span className={`px-2 py-1 rounded-lg text-[8px] font-black uppercase tracking-widest ${
-                      selectedQuantity === offer.quantity ? 'bg-emerald-500 text-white' : 'bg-white/10 text-slate-400'
+                      selectedQuantity === offer.quantity ? 'bg-emerald-500 text-white' : 'bg-glass-border text-muted'
                     }`}>
                       {offer.tag}
                     </span>
@@ -255,8 +255,8 @@ export default function CodForm({ productId, productPrice, attributes }: CodForm
                       <span className="text-amber-500 text-[10px] font-black">{offer.discount}</span>
                     )}
                   </div>
-                  <div className={`text-sm font-bold mb-1 transition-colors ${selectedQuantity === offer.quantity ? 'text-emerald-400' : 'text-slate-500'}`}>{offer.title}</div>
-                  <div className={`text-2xl font-black transition-colors ${selectedQuantity === offer.quantity ? 'text-white' : 'text-slate-300'}`}>
+                  <div className={`text-sm font-bold mb-1 transition-colors ${selectedQuantity === offer.quantity ? 'text-emerald-500' : 'text-muted'}`}>{offer.title}</div>
+                  <div className={`text-2xl font-black transition-colors ${selectedQuantity === offer.quantity ? 'text-main' : 'text-muted'}`}>
                     {Math.round(offer.price)} <span className="text-xs text-emerald-500 ml-1 font-bold">DZD</span>
                   </div>
                   {selectedQuantity === offer.quantity && (
@@ -276,16 +276,16 @@ export default function CodForm({ productId, productPrice, attributes }: CodForm
               { label: 'رقم الهاتف', name: 'phone', type: 'tel', placeholder: '05 / 06 / 07 xxxxxxxx', icon: <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /> }
             ].map((field) => (
               <div key={field.name} className="group space-y-2">
-                <label className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-500 px-1 group-focus-within:text-amber-500 transition-colors">{field.label}</label>
+                <label className="text-[10px] font-black uppercase tracking-[0.2em] text-muted px-1 group-focus-within:text-amber-500 transition-colors">{field.label}</label>
                 <div className="relative">
                     <input
                       type={field.type}
                       name={field.name}
                       required
                       placeholder={field.placeholder}
-                      className="w-full px-6 py-5 bg-white/[0.02] border-2 border-white/5 rounded-2xl focus:outline-none focus:border-amber-500/50 focus:bg-amber-500/[0.02] focus:ring-4 focus:ring-amber-500/5 text-white placeholder:text-slate-700 transition-all text-lg font-bold"
+                      className="w-full px-6 py-5 bg-card border-2 border-glass-border rounded-2xl focus:outline-none focus:border-amber-500/50 focus:bg-amber-500/[0.02] focus:ring-4 focus:ring-amber-500/5 text-main placeholder:text-muted/40 transition-all text-lg font-bold"
                     />
-                    <div className="absolute right-6 top-1/2 -translate-y-1/2 text-slate-700 group-focus-within:text-amber-500 transition-colors">
+                    <div className="absolute right-6 top-1/2 -translate-y-1/2 text-muted/40 group-focus-within:text-amber-500 transition-colors">
                       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">{field.icon}</svg>
                     </div>
                   </div>
@@ -298,7 +298,7 @@ export default function CodForm({ productId, productPrice, attributes }: CodForm
                   { label: 'البلدية', name: 'commune', value: selectedCommune, onChange: (e: any) => setSelectedCommune(e.target.value), options: availableCommunes.map(c => ({ id: c, name: c })), placeholder: 'اختر البلدية', disabled: !selectedWilaya }
                 ].map((select) => (
                   <div key={select.name} className="group space-y-2">
-                    <label className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-500 px-1 group-focus-within:text-amber-500 transition-colors">{select.label}</label>
+                    <label className="text-[10px] font-black uppercase tracking-[0.2em] text-muted px-1 group-focus-within:text-amber-500 transition-colors">{select.label}</label>
                     <div className="relative">
                       <select
                         name={select.name}
@@ -306,16 +306,16 @@ export default function CodForm({ productId, productPrice, attributes }: CodForm
                         value={select.value}
                         onChange={select.onChange}
                         disabled={select.disabled}
-                        className="w-full px-6 py-5 bg-white/[0.02] border-2 border-white/5 rounded-2xl focus:outline-none focus:border-amber-500/50 focus:bg-amber-500/[0.02] focus:ring-4 focus:ring-amber-500/5 text-white appearance-none transition-all font-bold disabled:opacity-20"
+                        className="w-full px-6 py-5 bg-card border-2 border-glass-border rounded-2xl focus:outline-none focus:border-amber-500/50 focus:bg-amber-500/[0.02] focus:ring-4 focus:ring-amber-500/5 text-main appearance-none transition-all font-bold disabled:opacity-20"
                       >
-                        <option value="" disabled className="bg-[#020617]">{select.placeholder}</option>
+                        <option value="" disabled className="bg-bg-dark">{select.placeholder}</option>
                         {select.options.map((opt) => (
-                          <option key={opt.id} value={opt.name} className="bg-[#020617]">
+                          <option key={opt.id} value={opt.name} className="bg-bg-dark">
                             {opt.id && !isNaN(Number(opt.id)) ? `${opt.id} - ` : ''}{opt.name}
                           </option>
                         ))}
                       </select>
-                      <div className="pointer-events-none absolute left-6 top-1/2 -translate-y-1/2 text-slate-700 group-focus-within:text-amber-500 transition-colors">
+                      <div className="pointer-events-none absolute left-6 top-1/2 -translate-y-1/2 text-muted/40 group-focus-within:text-amber-500 transition-colors">
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M19 9l-7 7-7-7"></path></svg>
                       </div>
                     </div>
@@ -335,19 +335,19 @@ export default function CodForm({ productId, productPrice, attributes }: CodForm
                     animate={{ opacity: 1, scale: 1, y: 0 }}
                     exit={{ opacity: 0, scale: 0.9, y: -20 }}
                     transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-                    className="p-8 rounded-[2.5rem] bg-white/[0.02] border border-white/5 space-y-6 shadow-inner"
+                    className="p-8 rounded-[2.5rem] bg-card border border-glass-border space-y-6 shadow-inner"
                   >
                     <div className="flex items-center gap-4">
                       <div className="w-10 h-10 rounded-2xl bg-emerald-500 text-white flex items-center justify-center font-black shadow-lg shadow-emerald-500/30">{index + 1}</div>
                       <div>
-                        <h3 className="text-sm font-black uppercase tracking-widest text-white">تخصيص المنتج</h3>
-                        <p className="text-[10px] font-bold text-slate-600 uppercase tracking-[0.2em]">اختر اللون والمقاس المفضل</p>
+                        <h3 className="text-sm font-black uppercase tracking-widest text-main">تخصيص المنتج</h3>
+                        <p className="text-[10px] font-bold text-muted uppercase tracking-[0.2em]">اختر اللون والمقاس المفضل</p>
                       </div>
                     </div>
                     
                     {colors.length > 0 && (
                       <div className="space-y-4">
-                        <label className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-500">اللون المفضل</label>
+                        <label className="text-[10px] font-black uppercase tracking-[0.2em] text-muted">اللون المفضل</label>
                         <div className="flex flex-wrap gap-3">
                           {colors.map((color) => (
                             <button
@@ -356,8 +356,8 @@ export default function CodForm({ productId, productPrice, attributes }: CodForm
                               onClick={() => handleColorSelect(index, color)}
                               className={`flex items-center gap-3 px-5 py-3 rounded-2xl border-2 transition-all duration-500 ${
                                 itemSelections[index].color === color
-                                  ? 'border-emerald-500 bg-emerald-500/10 text-white shadow-lg shadow-emerald-500/10'
-                                  : 'border-white/5 bg-white/[0.01] text-slate-600 hover:border-white/10'
+                                  ? 'border-emerald-500 bg-emerald-500/10 text-main shadow-lg shadow-emerald-500/10'
+                                  : 'border-glass-border bg-card text-muted hover:border-emerald-500/30'
                               }`}
                             >
                               <span 
@@ -373,7 +373,7 @@ export default function CodForm({ productId, productPrice, attributes }: CodForm
                     
                     {sizes.length > 0 && (
                       <div className="space-y-4">
-                        <label className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-500">المقاس المناسب</label>
+                        <label className="text-[10px] font-black uppercase tracking-[0.2em] text-muted">المقاس المناسب</label>
                         <div className="flex flex-wrap gap-3">
                           {sizes.map((size) => (
                             <button
@@ -382,9 +382,10 @@ export default function CodForm({ productId, productPrice, attributes }: CodForm
                               onClick={() => handleSizeSelect(index, size)}
                               className={`min-w-[60px] h-12 flex items-center justify-center rounded-2xl border-2 text-sm font-black transition-all duration-500 ${
                                 itemSelections[index].size === size
-                                  ? 'border-emerald-500 bg-emerald-500/10 text-emerald-400 shadow-lg shadow-emerald-500/10'
-                                  : 'border-white/5 bg-white/[0.01] text-slate-600 hover:border-white/10'
-                              }`}
+                                  ? 'border-emerald-500 bg-emerald-500/10 text-emerald-600 shadow-lg shadow-emerald-500/10'
+                                  : 'border-glass-border bg-card text-muted hover:border-emerald-500/30'
+                              }`
+                            }
                             >
                               {size}
                             </button>
@@ -399,9 +400,9 @@ export default function CodForm({ productId, productPrice, attributes }: CodForm
           )}
 
           {/* Shipping Methods - Premium Grid */}
-          <div className="space-y-4 pt-6 border-t border-white/5">
+          <div className="space-y-4 pt-6 border-t border-glass-border">
             <div className="flex items-center justify-between px-1">
-              <label className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-500">خيار الشحن</label>
+              <label className="text-[10px] font-black uppercase tracking-[0.2em] text-muted">خيار الشحن</label>
               <div className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse" />
                 <span className="text-[10px] font-black text-amber-500 uppercase tracking-widest">الدفع عند الاستلام</span>
@@ -419,47 +420,47 @@ export default function CodForm({ productId, productPrice, attributes }: CodForm
                   className={`p-6 rounded-3xl border-2 text-right transition-all duration-500 group relative overflow-hidden ${
                     shippingMethod === method.id
                       ? 'border-emerald-500 bg-emerald-500/10 shadow-lg shadow-emerald-500/10'
-                      : 'border-white/5 bg-white/[0.02] hover:border-white/10'
+                      : 'border-glass-border bg-card hover:border-emerald-500/30'
                   }`}
                 >
-                  <div className={`mb-3 transition-colors ${shippingMethod === method.id ? 'text-emerald-400' : 'text-slate-700'}`}>
+                  <div className={`mb-3 transition-colors ${shippingMethod === method.id ? 'text-emerald-500' : 'text-muted/40'}`}>
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">{method.icon}</svg>
                   </div>
-                  <div className={`text-xs font-black uppercase tracking-widest mb-1 ${shippingMethod === method.id ? 'text-white' : 'text-slate-600'}`}>{method.label}</div>
-                  <div className={`text-lg font-black ${shippingMethod === method.id ? 'text-emerald-400' : 'text-slate-400'}`}>{method.price} DZD</div>
+                  <div className={`text-xs font-black uppercase tracking-widest mb-1 ${shippingMethod === method.id ? 'text-main' : 'text-muted'}`}>{method.label}</div>
+                  <div className={`text-lg font-black ${shippingMethod === method.id ? 'text-emerald-500' : 'text-muted'}`}>{method.price} DZD</div>
                 </button>
               ))}
             </div>
           </div>
 
           {/* Pricing Summary - Ultra Premium */}
-          <div className="p-8 rounded-[2.5rem] bg-gradient-to-br from-neutral-900 to-black border-2 border-white/5 space-y-5 shadow-2xl relative overflow-hidden group">
+          <div className="p-8 rounded-[2.5rem] bg-card border-2 border-glass-border space-y-5 shadow-2xl relative overflow-hidden group">
             <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none group-hover:bg-emerald-500/10 transition-all duration-700" />
             
             <div className="space-y-3">
-              <div className="flex justify-between text-xs font-bold text-slate-500">
+              <div className="flex justify-between text-xs font-bold text-muted">
                 <span className="uppercase tracking-widest">سعر الطلبية</span>
-                <span className="text-white">{Math.round(bundleOffers.find(o => o.quantity === selectedQuantity)?.price || basePrice)} DZD</span>
+                <span className="text-main">{Math.round(bundleOffers.find(o => o.quantity === selectedQuantity)?.price || basePrice)} DZD</span>
               </div>
-              <div className="flex justify-between text-xs font-bold text-slate-500">
+              <div className="flex justify-between text-xs font-bold text-muted">
                 <span className="uppercase tracking-widest">تكلفة الشحن</span>
-                <span className="text-white">{shippingCost} DZD</span>
+                <span className="text-main">{shippingCost} DZD</span>
               </div>
             </div>
             
-            <div className="h-px bg-white/5" />
+            <div className="h-px bg-glass-border" />
             
             <div className="flex justify-between items-end pt-2">
               <div>
                 <span className="text-[10px] font-black uppercase tracking-[0.3em] text-emerald-500 mb-1 block">المبلغ الإجمالي</span>
                 <div className="flex items-baseline gap-2">
-                  <span className="text-5xl font-black text-white tracking-tighter">{Math.round(totalPrice)}</span>
+                  <span className="text-5xl font-black text-main tracking-tighter">{Math.round(totalPrice)}</span>
                   <span className="text-sm font-black text-emerald-500 uppercase">DZD</span>
                 </div>
               </div>
               <div className="flex flex-col items-end gap-1">
                 <div className="px-2 py-1 rounded bg-emerald-500/10 text-emerald-500 text-[8px] font-black uppercase tracking-tighter">شامل الضريبة</div>
-                <div className="text-[8px] font-black text-slate-700 uppercase tracking-widest">No hidden fees</div>
+                <div className="text-[8px] font-black text-muted uppercase tracking-widest">No hidden fees</div>
               </div>
             </div>
           </div>
