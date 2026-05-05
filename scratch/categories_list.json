@@ -1,0 +1,2704 @@
+[
+  {
+    "id": 61,
+    "name": "Abayas &amp; Modest Wear",
+    "slug": "abayas-modest-wear",
+    "parent": 48,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/61",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/48"
+        }
+      ]
+    }
+  },
+  {
+    "id": 35,
+    "name": "Accessories",
+    "slug": "accessories",
+    "parent": 16,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/35",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/16"
+        }
+      ]
+    }
+  },
+  {
+    "id": 68,
+    "name": "Accessories",
+    "slug": "accessories-women",
+    "parent": 47,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/68",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/47"
+        }
+      ]
+    }
+  },
+  {
+    "id": 39,
+    "name": "Bags &amp; Backpacks",
+    "slug": "bags-backpacks",
+    "parent": 35,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/39",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/35"
+        }
+      ]
+    }
+  },
+  {
+    "id": 46,
+    "name": "Beard Care",
+    "slug": "beard-care",
+    "parent": 42,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/46",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/42"
+        }
+      ]
+    }
+  },
+  {
+    "id": 75,
+    "name": "Beauty",
+    "slug": "beauty",
+    "parent": 47,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/75",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/47"
+        }
+      ]
+    }
+  },
+  {
+    "id": 37,
+    "name": "Belts",
+    "slug": "belts",
+    "parent": 35,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/37",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/35"
+        }
+      ]
+    }
+  },
+  {
+    "id": 33,
+    "name": "Boots",
+    "slug": "boots",
+    "parent": 29,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/33",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/29"
+        }
+      ]
+    }
+  },
+  {
+    "id": 66,
+    "name": "Boots",
+    "slug": "boots-footwear-women",
+    "parent": 62,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/66",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/62"
+        }
+      ]
+    }
+  },
+  {
+    "id": 31,
+    "name": "Casual Shoes",
+    "slug": "casual-shoes",
+    "parent": 29,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/31",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/29"
+        }
+      ]
+    }
+  },
+  {
+    "id": 17,
+    "name": "Clothing",
+    "slug": "clothing",
+    "parent": 16,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/17",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/16"
+        }
+      ]
+    }
+  },
+  {
+    "id": 48,
+    "name": "Clothing",
+    "slug": "clothing-women",
+    "parent": 47,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/48",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/47"
+        }
+      ]
+    }
+  },
+  {
+    "id": 49,
+    "name": "Dresses",
+    "slug": "dresses",
+    "parent": 48,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/49",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/48"
+        }
+      ]
+    }
+  },
+  {
+    "id": 64,
+    "name": "Flats",
+    "slug": "flats",
+    "parent": 62,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/64",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/62"
+        }
+      ]
+    }
+  },
+  {
+    "id": 29,
+    "name": "Footwear",
+    "slug": "footwear",
+    "parent": 16,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/29",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/16"
+        }
+      ]
+    }
+  },
+  {
+    "id": 62,
+    "name": "Footwear",
+    "slug": "footwear-women",
+    "parent": 47,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/62",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/47"
+        }
+      ]
+    }
+  },
+  {
+    "id": 32,
+    "name": "Formal Shoes",
+    "slug": "formal-shoes",
+    "parent": 29,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/32",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/29"
+        }
+      ]
+    }
+  },
+  {
+    "id": 42,
+    "name": "Grooming",
+    "slug": "grooming",
+    "parent": 16,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/42",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/16"
+        }
+      ]
+    }
+  },
+  {
+    "id": 45,
+    "name": "Haircare",
+    "slug": "haircare",
+    "parent": 42,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/45",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/42"
+        }
+      ]
+    }
+  },
+  {
+    "id": 78,
+    "name": "Haircare",
+    "slug": "haircare-beauty",
+    "parent": 75,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/78",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/75"
+        }
+      ]
+    }
+  },
+  {
+    "id": 69,
+    "name": "Handbags",
+    "slug": "handbags",
+    "parent": 68,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/69",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/68"
+        }
+      ]
+    }
+  },
+  {
+    "id": 41,
+    "name": "Hats &amp; Caps",
+    "slug": "hats-caps",
+    "parent": 35,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/41",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/35"
+        }
+      ]
+    }
+  },
+  {
+    "id": 63,
+    "name": "Heels",
+    "slug": "heels",
+    "parent": 62,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/63",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/62"
+        }
+      ]
+    }
+  },
+  {
+    "id": 21,
+    "name": "Hoodies &amp; Sweatshirts",
+    "slug": "hoodies-sweatshirts",
+    "parent": 17,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/21",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/17"
+        }
+      ]
+    }
+  },
+  {
+    "id": 53,
+    "name": "Hoodies &amp; Sweatshirts",
+    "slug": "hoodies-sweatshirts-clothing-women",
+    "parent": 48,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/53",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/48"
+        }
+      ]
+    }
+  },
+  {
+    "id": 22,
+    "name": "Jackets &amp; Coats",
+    "slug": "jackets-coats",
+    "parent": 17,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/22",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/17"
+        }
+      ]
+    }
+  },
+  {
+    "id": 54,
+    "name": "Jackets &amp; Coats",
+    "slug": "jackets-coats-clothing-women",
+    "parent": 48,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/54",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/48"
+        }
+      ]
+    }
+  },
+  {
+    "id": 24,
+    "name": "Jeans",
+    "slug": "jeans",
+    "parent": 17,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/24",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/17"
+        }
+      ]
+    }
+  },
+  {
+    "id": 55,
+    "name": "Jeans",
+    "slug": "jeans-clothing-women",
+    "parent": 48,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/55",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/48"
+        }
+      ]
+    }
+  },
+  {
+    "id": 71,
+    "name": "Jewelry",
+    "slug": "jewelry",
+    "parent": 68,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/71",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/68"
+        }
+      ]
+    }
+  },
+  {
+    "id": 59,
+    "name": "Lingerie",
+    "slug": "lingerie",
+    "parent": 48,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/59",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/48"
+        }
+      ]
+    }
+  },
+  {
+    "id": 76,
+    "name": "Makeup",
+    "slug": "makeup",
+    "parent": 75,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/76",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/75"
+        }
+      ]
+    }
+  },
+  {
+    "id": 16,
+    "name": "Men",
+    "slug": "men",
+    "parent": 0,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/16",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ]
+    }
+  },
+  {
+    "id": 56,
+    "name": "Pants &amp; Leggings",
+    "slug": "pants-leggings",
+    "parent": 48,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/56",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/48"
+        }
+      ]
+    }
+  },
+  {
+    "id": 25,
+    "name": "Pants &amp; Trousers",
+    "slug": "pants-trousers",
+    "parent": 17,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/25",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/17"
+        }
+      ]
+    }
+  },
+  {
+    "id": 43,
+    "name": "Perfumes",
+    "slug": "perfumes",
+    "parent": 42,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/43",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/42"
+        }
+      ]
+    }
+  },
+  {
+    "id": 79,
+    "name": "Perfumes",
+    "slug": "perfumes-beauty",
+    "parent": 75,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/79",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/75"
+        }
+      ]
+    }
+  },
+  {
+    "id": 20,
+    "name": "Polo",
+    "slug": "polo",
+    "parent": 17,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/20",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/17"
+        }
+      ]
+    }
+  },
+  {
+    "id": 34,
+    "name": "Sandals &amp; Slippers",
+    "slug": "sandals-slippers",
+    "parent": 29,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/34",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/29"
+        }
+      ]
+    }
+  },
+  {
+    "id": 67,
+    "name": "Sandals &amp; Slippers",
+    "slug": "sandals-slippers-footwear-women",
+    "parent": 62,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/67",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/62"
+        }
+      ]
+    }
+  },
+  {
+    "id": 74,
+    "name": "Scarves &amp; Hijabs",
+    "slug": "scarves-hijabs",
+    "parent": 68,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/74",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/68"
+        }
+      ]
+    }
+  },
+  {
+    "id": 19,
+    "name": "Shirts",
+    "slug": "shirts",
+    "parent": 17,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/19",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/17"
+        }
+      ]
+    }
+  },
+  {
+    "id": 52,
+    "name": "Shirts",
+    "slug": "shirts-clothing-women",
+    "parent": 48,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/52",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/48"
+        }
+      ]
+    }
+  },
+  {
+    "id": 26,
+    "name": "Shorts",
+    "slug": "shorts",
+    "parent": 17,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/26",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/17"
+        }
+      ]
+    }
+  },
+  {
+    "id": 58,
+    "name": "Shorts",
+    "slug": "shorts-clothing-women",
+    "parent": 48,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/58",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/48"
+        }
+      ]
+    }
+  },
+  {
+    "id": 44,
+    "name": "Skincare",
+    "slug": "skincare",
+    "parent": 42,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/44",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/42"
+        }
+      ]
+    }
+  },
+  {
+    "id": 77,
+    "name": "Skincare",
+    "slug": "skincare-beauty",
+    "parent": 75,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/77",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/75"
+        }
+      ]
+    }
+  },
+  {
+    "id": 57,
+    "name": "Skirts",
+    "slug": "skirts",
+    "parent": 48,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/57",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/48"
+        }
+      ]
+    }
+  },
+  {
+    "id": 28,
+    "name": "Sleepwear",
+    "slug": "sleepwear",
+    "parent": 17,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/28",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/17"
+        }
+      ]
+    }
+  },
+  {
+    "id": 60,
+    "name": "Sleepwear",
+    "slug": "sleepwear-clothing-women",
+    "parent": 48,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/60",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/48"
+        }
+      ]
+    }
+  },
+  {
+    "id": 30,
+    "name": "Sneakers",
+    "slug": "sneakers",
+    "parent": 29,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/30",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/29"
+        }
+      ]
+    }
+  },
+  {
+    "id": 65,
+    "name": "Sneakers",
+    "slug": "sneakers-footwear-women",
+    "parent": 62,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/65",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/62"
+        }
+      ]
+    }
+  },
+  {
+    "id": 23,
+    "name": "Suits &amp; Blazers",
+    "slug": "suits-blazers",
+    "parent": 17,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/23",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/17"
+        }
+      ]
+    }
+  },
+  {
+    "id": 40,
+    "name": "Sunglasses",
+    "slug": "sunglasses",
+    "parent": 35,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/40",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/35"
+        }
+      ]
+    }
+  },
+  {
+    "id": 73,
+    "name": "Sunglasses",
+    "slug": "sunglasses-accessories-women",
+    "parent": 68,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/73",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/68"
+        }
+      ]
+    }
+  },
+  {
+    "id": 18,
+    "name": "T-Shirts",
+    "slug": "t-shirts",
+    "parent": 17,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/18",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/17"
+        }
+      ]
+    }
+  },
+  {
+    "id": 51,
+    "name": "T-Shirts",
+    "slug": "t-shirts-clothing-women",
+    "parent": 48,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/51",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/48"
+        }
+      ]
+    }
+  },
+  {
+    "id": 50,
+    "name": "Tops &amp; Blouses",
+    "slug": "tops-blouses",
+    "parent": 48,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/50",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/48"
+        }
+      ]
+    }
+  },
+  {
+    "id": 15,
+    "name": "Uncategorized",
+    "slug": "uncategorized",
+    "parent": 0,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 1,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/15",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ]
+    }
+  },
+  {
+    "id": 27,
+    "name": "Underwear",
+    "slug": "underwear",
+    "parent": 17,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/27",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/17"
+        }
+      ]
+    }
+  },
+  {
+    "id": 38,
+    "name": "Wallets",
+    "slug": "wallets",
+    "parent": 35,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/38",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/35"
+        }
+      ]
+    }
+  },
+  {
+    "id": 70,
+    "name": "Wallets",
+    "slug": "wallets-accessories-women",
+    "parent": 68,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/70",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/68"
+        }
+      ]
+    }
+  },
+  {
+    "id": 36,
+    "name": "Watches",
+    "slug": "watches",
+    "parent": 35,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/36",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/35"
+        }
+      ]
+    }
+  },
+  {
+    "id": 72,
+    "name": "Watches",
+    "slug": "watches-accessories-women",
+    "parent": 68,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/72",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/68"
+        }
+      ]
+    }
+  },
+  {
+    "id": 47,
+    "name": "Women",
+    "slug": "women",
+    "parent": 0,
+    "description": "",
+    "display": "default",
+    "image": null,
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/47",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ]
+    }
+  },
+  {
+    "id": 82,
+    "name": "الأحذية",
+    "slug": "%d8%a7%d9%84%d8%a3%d8%ad%d8%b0%d9%8a%d8%a9",
+    "parent": 80,
+    "description": "",
+    "display": "default",
+    "image": {
+      "id": 27,
+      "date_created": "2026-05-01T23:34:27",
+      "date_created_gmt": "2026-05-01T23:34:27",
+      "date_modified": "2026-05-01T23:34:27",
+      "date_modified_gmt": "2026-05-01T23:34:27",
+      "src": "https://hooricoo.com/wp-content/uploads/2026/05/1.png",
+      "name": "1",
+      "alt": ""
+    },
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/82",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/80"
+        }
+      ]
+    }
+  },
+  {
+    "id": 85,
+    "name": "الأحذية",
+    "slug": "%d8%a7%d9%84%d8%a3%d8%ad%d8%b0%d9%8a%d8%a9-%d8%a7%d9%84%d9%86%d8%b3%d8%a7%d8%a1",
+    "parent": 83,
+    "description": "",
+    "display": "default",
+    "image": {
+      "id": 32,
+      "date_created": "2026-05-01T23:34:36",
+      "date_created_gmt": "2026-05-01T23:34:36",
+      "date_modified": "2026-05-01T23:34:36",
+      "date_modified_gmt": "2026-05-01T23:34:36",
+      "src": "https://hooricoo.com/wp-content/uploads/2026/05/6.png",
+      "name": "6",
+      "alt": ""
+    },
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/85",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/83"
+        }
+      ]
+    }
+  },
+  {
+    "id": 86,
+    "name": "الإكسسوارات",
+    "slug": "%d8%a7%d9%84%d8%a5%d9%83%d8%b3%d8%b3%d9%88%d8%a7%d8%b1%d8%a7%d8%aa",
+    "parent": 83,
+    "description": "",
+    "display": "default",
+    "image": {
+      "id": 33,
+      "date_created": "2026-05-01T23:34:37",
+      "date_created_gmt": "2026-05-01T23:34:37",
+      "date_modified": "2026-05-01T23:34:37",
+      "date_modified_gmt": "2026-05-01T23:34:37",
+      "src": "https://hooricoo.com/wp-content/uploads/2026/05/7.png",
+      "name": "7",
+      "alt": ""
+    },
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/86",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/83"
+        }
+      ]
+    }
+  },
+  {
+    "id": 80,
+    "name": "الرجال",
+    "slug": "%d8%a7%d9%84%d8%b1%d8%ac%d8%a7%d9%84",
+    "parent": 0,
+    "description": "سوف تجدون كل ما يتعلق بالرجال",
+    "display": "default",
+    "image": {
+      "id": 27,
+      "date_created": "2026-05-01T23:34:27",
+      "date_created_gmt": "2026-05-01T23:34:27",
+      "date_modified": "2026-05-01T23:34:27",
+      "date_modified_gmt": "2026-05-01T23:34:27",
+      "src": "https://hooricoo.com/wp-content/uploads/2026/05/1.png",
+      "name": "1",
+      "alt": ""
+    },
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/80",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ]
+    }
+  },
+  {
+    "id": 81,
+    "name": "الملابس",
+    "slug": "%d8%a7%d9%84%d9%85%d9%84%d8%a7%d8%a8%d8%b3",
+    "parent": 80,
+    "description": "",
+    "display": "default",
+    "image": {
+      "id": 19,
+      "date_created": "2026-04-29T20:45:06",
+      "date_created_gmt": "2026-04-29T20:45:06",
+      "date_modified": "2026-04-29T20:45:06",
+      "date_modified_gmt": "2026-04-29T20:45:06",
+      "src": "https://hooricoo.com/wp-content/uploads/2026/04/enhanced-shoe-nature-1.png",
+      "name": "enhanced-shoe-nature (1)",
+      "alt": ""
+    },
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/81",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/80"
+        }
+      ]
+    }
+  },
+  {
+    "id": 84,
+    "name": "الملابس",
+    "slug": "%d8%a7%d9%84%d9%85%d9%84%d8%a7%d8%a8%d8%b3-%d8%a7%d9%84%d9%86%d8%b3%d8%a7%d8%a1",
+    "parent": 83,
+    "description": "",
+    "display": "default",
+    "image": {
+      "id": 28,
+      "date_created": "2026-05-01T23:34:29",
+      "date_created_gmt": "2026-05-01T23:34:29",
+      "date_modified": "2026-05-01T23:34:29",
+      "date_modified_gmt": "2026-05-01T23:34:29",
+      "src": "https://hooricoo.com/wp-content/uploads/2026/05/2.png",
+      "name": "2",
+      "alt": ""
+    },
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/84",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ],
+      "up": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/83"
+        }
+      ]
+    }
+  },
+  {
+    "id": 83,
+    "name": "النساء",
+    "slug": "%d8%a7%d9%84%d9%86%d8%b3%d8%a7%d8%a1",
+    "parent": 0,
+    "description": "",
+    "display": "default",
+    "image": {
+      "id": 28,
+      "date_created": "2026-05-01T23:34:29",
+      "date_created_gmt": "2026-05-01T23:34:29",
+      "date_modified": "2026-05-01T23:34:29",
+      "date_modified_gmt": "2026-05-01T23:34:29",
+      "src": "https://hooricoo.com/wp-content/uploads/2026/05/2.png",
+      "name": "2",
+      "alt": ""
+    },
+    "menu_order": 0,
+    "count": 0,
+    "_links": {
+      "self": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories/83",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://hooricoo.com/wp-json/wc/v3/products/categories"
+        }
+      ]
+    }
+  }
+]
