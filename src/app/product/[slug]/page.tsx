@@ -160,7 +160,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
               </div>
               <div className="text-xl font-black tracking-tighter text-main">
-                Z-COMMERCE <span className="text-emerald-500">PREMIUM</span>
+                HOORICOO <span className="text-emerald-500">PREMIUM</span>
               </div>
             </div>
             <div className="flex gap-8">

@@ -1,17 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
   
   --color-primary: #10b981; /* Emerald 500 */
   --color-primary-hover: #059669; /* Emerald 600 */
   --color-accent: #fbbf24; /* Amber/Gold 400 */
-  --color-bg-dark: #f8fafc; /* Light default background */
-  --color-bg-card: rgba(0, 0, 0, 0.03);
-  --color-text-main: #020617;
-  --color-text-muted: #64748b;
-  --color-glass-border: rgba(0, 0, 0, 0.08);
+  --color-bg-dark: #fffdfa; /* Luxury Ivory */
+  --color-bg-card: rgba(0, 0, 0, 0.02);
+  --color-text-main: #1a1a1a;
+  --color-text-muted: #8c7e6d; /* Warm muted taupe */
+  --color-glass-border: rgba(140, 126, 109, 0.12);
   --glass-blur: blur(20px);
 }
 

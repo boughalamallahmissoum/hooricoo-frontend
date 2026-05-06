@@ -3,23 +3,24 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const BANNERS = [
   {
     id: 1,
-    title: "Men's Luxury Collection",
-    subtitle: "Define Your Style",
+    title: "مجموعة الرجال الفاخرة",
+    subtitle: "حدد أسلوبك الخاص",
     image: "/images/banner-men.png",
-    cta: "Shop Men",
-    color: "from-emerald-900/40 to-transparent"
+    cta: "تسوق للرجال",
+    color: "from-emerald-900/20 to-transparent"
   },
   {
     id: 2,
-    title: "Women's Modest Wear",
-    subtitle: "Elegance & Grace",
+    title: "أزياء نسائية راقية",
+    subtitle: "أناقة ورقي لا يضاهى",
     image: "/images/banner-women.png",
-    cta: "Shop Women",
-    color: "from-amber-900/40 to-transparent"
+    cta: "تسوقي الآن",
+    color: "from-amber-900/20 to-transparent"
   }
 ];
 
@@ -86,7 +87,10 @@ export default function PromotionalSlider() {
                 transition={{ delay: 0.8 }}
                 className="flex items-center gap-6"
               >
-                <button className="btn-premium px-12 py-5 text-xl group">
+                <Link 
+                  href={BANNERS[current].id === 1 ? "/category/men" : "/category/women"}
+                  className="btn-premium px-12 py-5 text-xl group block"
+                >
                   <span className="flex items-center gap-3">
                     {BANNERS[current].cta}
                     <motion.span 
@@ -96,10 +100,7 @@ export default function PromotionalSlider() {
                       &rarr;
                     </motion.span>
                   </span>
-                </button>
-                <button className="px-8 py-5 text-main font-bold hover:text-emerald-500 transition-colors hidden sm:block">
-                  شاهد التشكيلة كاملة
-                </button>
+                </Link>
               </motion.div>
             </div>
           </div>

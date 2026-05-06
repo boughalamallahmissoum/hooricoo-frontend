@@ -9,8 +9,10 @@ const CustomCursor = () => {
   const cursorX = useSpring(0, { damping: 20, stiffness: 300 });
   const cursorY = useSpring(0, { damping: 20, stiffness: 300 });
   const [isHovering, setIsHovering] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     const moveCursor = (e: MouseEvent) => {
       cursorX.set(e.clientX - 16);
       cursorY.set(e.clientY - 16);
@@ -41,7 +43,7 @@ const CustomCursor = () => {
     };
   }, [cursorX, cursorY, isVisible]);
 
-  if (typeof window === 'undefined') return null;
+  if (!mounted) return null;
 
   return (
     <motion.div

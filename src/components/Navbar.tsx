@@ -2,6 +2,8 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Link from 'next/link';
+import { Shirt } from 'lucide-react';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -31,6 +33,7 @@ const Navbar = () => {
         }`}
       >
         <div className="flex items-center gap-3">
+        <Link href="/" className="flex items-center gap-3 group/logo">
           <motion.div 
             whileHover={{ rotate: 10, scale: 1.1 }}
             className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-xl flex items-center justify-center shadow-lg shadow-emerald-500/20"
@@ -39,8 +42,20 @@ const Navbar = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
             </svg>
           </motion.div>
-          <div className="text-lg sm:text-xl font-black tracking-tighter text-[var(--color-text-main)]">
-            Z-COMMERCE <span className="text-emerald-500">PREMIUM</span>
+          <div className="text-lg sm:text-xl font-black tracking-tighter text-[var(--color-text-main)] group-hover/logo:text-emerald-500 transition-colors">
+            HOORICOO <span className="text-emerald-500">.</span>
+          </div>
+        </Link>
+          
+          <div className="hidden lg:flex items-center gap-10 mr-8">
+            <Link href="/category/men" className="group flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] hover:text-emerald-500 transition-colors">
+              <Shirt size={14} className="text-emerald-500/40 group-hover:text-emerald-500 transition-colors" />
+              <span>الرجال</span>
+            </Link>
+            <Link href="/category/women" className="group flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] hover:text-emerald-500 transition-colors">
+              <span className="w-2 h-2 rounded-full border border-emerald-500/40 group-hover:bg-emerald-500 transition-all" />
+              <span>النساء</span>
+            </Link>
           </div>
         </div>
 
